@@ -15,7 +15,7 @@ def capitalize_text(text: str) -> str:
 
 some_text = 'good Bad UGLY'
 
-print(capitalize_text(some_text))
+# print(capitalize_text(some_text))
 
 
 # Task 2
@@ -30,8 +30,37 @@ def word_count(text: str):
 
     return x
 
+# print(word_count('rrr 123 rerer, rwr , к '))
 
-print(word_count('rrr 123 rerer, rwr , к '))
+
+# Task 3
+
+some_list = [1, 2, 3,4,5,6,7,8, '123']
+
+def check_if_all_el_is_num(list1: list):
+
+    k = all([type(k) == int for k in list1])
+
+    if k == True:
+        k2 = [k2 for k2 in list1 if k2 % 2 != 0]
+
+        return k2
+    else:
+        return 'Not all elements in the list have integer type'
+
+
+print(check_if_all_el_is_num(some_list))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
